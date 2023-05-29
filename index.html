@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <section class="card" id="selection-card">
+      <div class="card__star">
+        <img
+          src="./images/icon-star.svg"
+          alt="Star icon"
+          class="card__star-img"
+        />
+      </div>
+      <div class="card-txt">
+        <h1 class="card-txt__heading">How did we do?</h1>
+        <p class="card-txt__para">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <ol class="card-rating">
+        <li class="card-rating-number" data-rating="1">1</li>
+        <li class="card-rating-number" data-rating="2">2</li>
+        <li class="card-rating-number" data-rating="3">3</li>
+        <li class="card-rating-number" data-rating="4">4</li>
+        <li class="card-rating-number" data-rating="5">5</li>
+      </ol>
+      <button class="card-submit" id="submit-btn" type="submit">submit</button>
+    </section>
+
+    <section class="card-submmited" id="submitted-card">
+      <img
+        src="./images/illustration-thank-you.svg"
+        alt="Thank you illustration"
+        class="card-submmited-img"
+      />
+      <p class="card-submmited__rated" id="card-submmited-rated">You selected <span id="submitted-rating-number"></span> out of 5</p>
+      <div class="card-submmited-txt">
+
+        <h1 class="card-submmited-txt__heading">Thank you!</h1>
+        <p class="card-submmited-txt__para">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+@mixin grid-centering {
+  display: grid;
+  place-content: center;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin card($max-width, $top, $right, $bottom, $left) {
+  max-width: rem($max-width);
+  background: $gradientBG;
+  color: $White;
+  border-radius: rem(30);
+  padding: rem($top) rem($right) rem($bottom) rem($left);
+  overflow: hidden;
+}
+
+@mixin heading($headingSize, $marginBottom) {
+  font-size: rem($headingSize);
+  line-height: 1.25;
+  margin-bottom: rem($marginBottom);
+}
+
+@mixin para($paraSize, $paraLH) {
+  font-size: rem($paraSize);
+  line-height: $paraLH;
+  color: $LightGray;
+}

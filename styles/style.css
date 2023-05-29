@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1;
+  display: grid;
+  place-content: center;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+.card {
+  max-width: 25.75rem;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+  color: #ffffff;
+  border-radius: 1.875rem;
+  padding: 2rem 2.4375rem 2rem 2rem;
+  overflow: hidden;
+}
+.card__star {
+  display: grid;
+  place-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #252d37;
+  margin-bottom: 1.875rem;
+}
+.card-txt {
+  margin-bottom: 1.5rem;
+}
+.card-txt__heading {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin-bottom: 0.4375rem;
+}
+.card-txt__para {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #959eac;
+}
+.card-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.card-rating-number {
+  display: grid;
+  place-content: center;
+  width: 3.1875rem;
+  height: 3.1875rem;
+  background-color: #252d37;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #7c8798;
+  cursor: pointer;
+}
+.card-rating-number:hover {
+  background-color: #fb7413;
+  color: #ffffff;
+}
+.card-rating-number--selected {
+  background-color: #959eac;
+}
+.card-submit {
+  width: 100%;
+  height: 2.8125rem;
+  padding: 0.6875rem 0rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fb7413;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 6.25rem;
+  cursor: pointer;
+}
+.card-submit:hover {
+  background-color: #ffffff;
+  color: #fb7413;
+}
+
+.card-submmited {
+  max-width: 25.75rem;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+  color: #ffffff;
+  border-radius: 1.875rem;
+  padding: 2.8125rem 2.5rem 2.8125rem 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  display: none;
+}
+.card-submmited-img {
+  width: 10.125rem;
+  height: 6.75rem;
+}
+.card-submmited__rated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  width: 12.0625rem;
+  height: 2.0125rem;
+  background-color: #252d37;
+  border-radius: 6.25rem;
+  color: #fb7413;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  padding: 0.2625rem 0rem;
+}
+.card-submmited__rated p {
+  display: inline-block;
+}
+.card-submmited-txt {
+  text-align: center;
+}
+.card-submmited-txt__heading {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin-bottom: 0.4375rem;
+}
+.card-submmited-txt__para {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #959eac;
+}
+
+.clicked-state {
+  background-color: #959eac;
+  color: #ffffff;
+}
+
+.selection-card-none {
+  display: none;
+}
+
+.submitted-card-flex {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
